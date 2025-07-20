@@ -1,0 +1,13 @@
+*.log
+__pycache__/
+node_modules/
+dist/
+build/
+.env
+*.sqlite3
+*.pem
+*.key
+*.crt
+.idea/
+.vscode/
+.DS_Store
