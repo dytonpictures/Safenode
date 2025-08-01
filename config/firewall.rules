@@ -1,3 +1,0 @@
-# Beispiel-Firewall-Regeln
-allow 443
-block geo:RU
