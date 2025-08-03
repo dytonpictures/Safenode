@@ -1,0 +1,9 @@
+services:
+  web:
+    # Weisen Sie Docker an, die Dockerfile im aktuellen Verzeichnis zu verwenden.
+    build: .dockerfile
+    volumes:
+      - .:/var/safenode/ui/
+    # Ordnen Sie den Container-Port 3000 dem Host-Port 3000 zu.
+    ports:
+      - "3000:3000"

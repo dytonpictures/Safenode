@@ -1,0 +1,22 @@
+# Starten Sie mit einem Node.js-Image
+FROM node:18-alpine
+
+# Legen Sie ein Arbeitsverzeichnis im Container fest
+WORKDIR /var/safenode/ui/
+# Kopieren Sie die Abhängigkeitsdateien
+COPY package*.json ./
+
+# Installieren Sie die Abhängigkeiten
+RUN npm install
+
+# Kopieren Sie den Rest Ihrer Anwendung in das Arbeitsverzeichnis
+COPY . .
+
+# Führen Sie einen Build-Schritt aus, falls vorhanden
+# RUN npm run build
+
+# Machen Sie den Port 3000 für die Anwendung sichtbar
+EXPOSE 3000
+
+# Definieren Sie den Befehl, der die Anwendung startet
+CMD [ "npm", "run", "dev" ]

@@ -1,0 +1,5 @@
+{
+  "name": "SafeNode UI",
+  "description": "A dashboard for SafeNode, a platform for secure online services. Manage VPN, DNS, Monitoring, and access security awareness training.",
+  "requestFramePermissions": []
+}
